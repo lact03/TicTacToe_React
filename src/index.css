@@ -40,7 +40,12 @@ body {
 }
 
 .player-score {
-  padding: 0 100px;
+  width: 300px;
+}
+.player-score h1 {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .board-container {
@@ -115,4 +120,34 @@ button {
   filter: drop-shadow(var(--shadow));
   font-family: "Indie Flower";
   font-weight: 700;
+}
+
+@media (max-width: 1023px) {
+  .content-container {
+    gap: 24px;
+  }
+  .player-score {
+    width: auto;
+  }
+  .player-score h1 {
+    font-size: 1.5rem;
+    width: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .content-container {
+    position: relative;
+    gap: 0;
+  }
+  #board {
+    height: 300px;
+  }
+  .player-score {
+    position: absolute;
+    bottom: -20%;
+  }
+  .player-score:nth-child(1) {
+    right: 0;
+  }
 }

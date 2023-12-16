@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { GameContext } from "../contexts/GameContextProvider";
 
 function Tile({ tileNumber }) {
